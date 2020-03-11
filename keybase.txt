@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/franz899
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://v19i.com
+  * I am franz899 (https://keybase.io/franz899) on keybase.
+  * I have a public key ASBhP2AO8b9iIa6uN7qODC5GuoUFa9rbVO38sara4HQ8uQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01200728252f06c70fd5fe48cc21ceb9643ed1178ad645fc10102c7751609cc3f4bd0a",
+      "host": "keybase.io",
+      "kid": "0120613f600ef1bf6221aeae37ba8e0c2e46ba85056bdadb54edfcb1aadae0743cb90a",
+      "uid": "a60431fcdfdd811f0dd4c66e15afc419",
+      "username": "franz899"
+    },
+    "merkle_root": {
+      "ctime": 1583913377,
+      "hash": "b2cd4249cfc88647e32ca57ac58229fc8e56694844f1cd14013c5c205b7c1278b5ce9c7523cd0c2a6f5f1c2f0c007c800f43ff7ee1f3c759a794bb12b809eb06",
+      "hash_meta": "9c6425fb068cc72f14d92c8baa13001f235565034ca8065408c87720d16effc8",
+      "seqno": 15275305
+    },
+    "service": {
+      "entropy": "BC/btU7weXIs+LVuUzT6HIM2",
+      "hostname": "v19i.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.2.0"
+  },
+  "ctime": 1583913399,
+  "expire_in": 504576000,
+  "prev": "cdf61ce1f973b09d0f47b5f5bc0f1154205282f6ab33d30ce447596e273aabb2",
+  "seqno": 28,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgYT9gDvG/YiGurje6jgwuRrqFBWva21Tt/LGq2uB0PLkKp3BheWxvYWTESpcCHMQgzfYc4flzsJ0PR7X1vA8RVCBSgvarM9MM5EdZbic6q7LEIIOUXMQl7ziWgIU+FS1s3VkcowGL4GgAWAS5YF9SEi0JAgHCo3NpZ8RAxW4pzK+NxScBGnR0CBohmJm7dYhyZjoNzbgqBr5CzXvQtZuAgQmq8xsXKx4UWp0aFUuwr9bRCcyL8+8Cb6AlCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBrbSSQE3s5PFxm6G/Fpi+qrubhxaLTX0R+MTauFjvfPo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/franz899
+
+==================================================================
