@@ -1,3 +1,99 @@
-<!doctype html><html lang=en-gb><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta charset=utf-8><meta http-equiv=content-style-type content="text/css"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.83.1"><title>On Agile software development - Valerio Francescangeli</title><link rel=stylesheet type=text/css href=/css/base.min.0f8a99670881dcfea571a35e1af122d4488a95fa1e896398008003ddf1addc3d.css integrity="sha256-D4qZZwiB3P6lcaNeGvEi1EiKlfoeiWOYAIAD3fGt3D0="><link rel=stylesheet type=text/css href=/css/article.min.78b982e2b241d6484c1c98080f69ac636e555cc60b7bf45cf45772ba9f537e83.css integrity="sha256-eLmC4rJB1khMHJgID2msY25VXMYLe/Rc9Fdyup9TfoM="></head><body><div id=content><nav><a href=/>HOME</a></nav><h1 id=on-agile-software-development>On Agile software development</h1><h2 id=an-often-distorted-view>An often distorted view</h2><p>In the past year, I’ve run many interviews for project-manager and engineering roles. One common thing I’ve noticed is that the industry’s idea of what Agile means, is incredibly varied, going from something that is waterfall under a different name, to a style that requires specific “Agile roles” in a team.</p><p>In this post, I’ll go through what the initial idea of Agile was, and what it should be; hopefully, this will help people realise how far from the original purpose they’ve steered.</p><h2 id=scrum-master>Scrum Master</h2><p>Let’s start by talking about any team with a person dedicated to increasing everybody’s productivity. Every team that feels the need for it is, in my view, a team without professional people that you can trust, and a team with whom I probably would not enjoy working. The whole point of Agile is to operate in a group where collaboration, curiosity and ownership are the driving factors, and each member of the team should be happy taking turns to get involved and help other members.</p><h2 id=stand-up-meeting>Stand-up meeting</h2><p>Stand-up is where the team shares their updates and has the chance to ask for help. It is usually held in the morning, but it’s not essential.
-Each story requires a different amount of time, engagement and communication; there won’t always be an update from everyone.</p><p>A warning sign is when each member is directly asked to provide an update, even when there is nothing new to discuss; this usually indicates a lack of trust, or professionalism, from one of the two parts. This ideally short meeting can quickly become distorted and micro-managed, transforming it from a useful tool to a tedious process.</p><h2 id=grooming>Grooming</h2><p>This meeting should be all about discussing what’s next and exploring ideas but without any commitment. The ticket should remain quite vague, with only a short explanation of what the goal is. Talking about problems and solutions allows the entire team to get a chance to say what they think and to increase domain knowledge sharing.</p><p>It’s essential to keep the above in mind. A grooming meeting can get very ugly, becoming a planning meeting lacking in defined scope, where each ticket gets discussed and written down in minute details.</p><h2 id=planning>Planning</h2><p>Planning should be all about reviewing and expanding the tickets discussed during grooming. When talking about them, the team can add details and acceptance criteria. Acceptance criteria don’t have to be comprehensive yet but should describe what we expect from a working feature.</p><p>A planning session should last two hours for a one week sprint, with an additional two for each consecutive week.</p><p>To create good user stories, follow the INVEST rules:</p><table><thead><tr><th style=text-align:left>Rule</th><th style=text-align:left>Description</th></tr></thead><tbody><tr><td style=text-align:left>Independent</td><td style=text-align:left>User stories are independent of each other. They can be implemented in no particular order</td></tr><tr><td style=text-align:left>Negotiable</td><td style=text-align:left>Details should be left out of a card up until it will be kept up to do the work; This allows the card to be negotiable between developers and the business needs</td></tr><tr><td style=text-align:left>Valuable</td><td style=text-align:left>Must have clean and quantifiable value to the business</td></tr><tr><td style=text-align:left>Estimable</td><td style=text-align:left>Must be concrete enough to allow a developer to estimate it</td></tr><tr><td style=text-align:left>Small</td><td style=text-align:left>It should not be larger than the work that one or two developers can get done in a single iteration</td></tr><tr><td style=text-align:left>Testable</td><td style=text-align:left>It should have clear acceptance tests, provided by the business, and implemented by the QA. Once they pass, the story is considered done. Developers and QA should communicate, discuss and work together, if necessary</td></tr></tbody></table><h2 id=the-iteration>The iteration</h2><p>Once the sprint starts, team members will begin picking up stories; this is where I often see the most confusion. Business, devs and QA should work together on each ticket from the start, discussing the story and adding happy and unhappy paths. I see many teams working in turns, with dev doing all their work and then passing the story to the QA, who then takes the story and implements their tests. This way of working is not collaborative, and by the time a dev says that the code is ready it’s usually too late to make any necessary changes quickly.
-Ideally, dev and QA must start working together on the ticket, with dev running all the tests as soon as they are available to establish a quick feedback loop.</p><p>One piece of advice that I would give to each team is to start in the simplest way they can to manage stories and their progress. Many modern tools provide so much choice, but they add complexity to something designed for streamlining development.</p><h2 id=software-development-methodology>Software development methodology</h2><p>The point of any Agile team is to provide working software at the end of each sprint. I often see teams defining themselves Agile, but without following the necessary methodologies required.</p><h3 id=simple-design>Simple Design</h3><p>To be able to deliver value at the end of each sprint, code must be written in a way that minimises complexity and enables easily testable code.</p><h3 id=pair-programming>Pair Programming</h3><p>Pair Programming comes from the spirit of knowledge sharing and collaboration that Agile promotes. By pair programming, each member of the team will know more about the domain. It is easier to reach a satisfactory solution by working together.</p><h3 id=test-driven-development>Test Driven Development</h3><p>By the end of each sprint, all the stories should be ready to be released. How can you be sure if your code works as expected? The solution is to write your code, alongside a test that verifies your assumptions, so that each line of code is only added when necessary for the test to pass. This technique goes hand in hand with Simple Design.</p><h2 id=definition-of-done>Definition of done</h2><p>The point of each sprint is to deliver code ready to be released if the business decides that it is the right moment.</p><blockquote><p>How do you know when your code is ready to be released? When all the tests are passing.</p></blockquote><p>If a team is not confident enough in their code and tests, it should sound like a big warning, and the team must work out why and how to fix it as soon as possible.</p><h2 id=retro>Retro</h2><p>One of those meetings that people not confident in Agile tend to underestimate.</p><p>Without a retro, a team won’t be able to improve quickly. By removing the obstacles that cause the most pain, they can be sure to check the effectiveness of their teamwork.</p><footer><time class=post-publication-date datetime=2020-02-10>10 Feb 2020</time></footer></div></body></html>
+<!doctype html><html lang=en-gb>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta charset=utf-8>
+<meta http-equiv=content-style-type content="text/css">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.89.1">
+<title>On Agile software development - Valerio Francescangeli</title>
+<link rel=stylesheet type=text/css href=/css/base.min.0f8a99670881dcfea571a35e1af122d4488a95fa1e896398008003ddf1addc3d.css integrity="sha256-D4qZZwiB3P6lcaNeGvEi1EiKlfoeiWOYAIAD3fGt3D0=">
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+<meta name=msapplication-TileColor content="#da532c">
+<meta name=theme-color content="#ffffff">
+<link rel=stylesheet type=text/css href=/css/article.min.78b982e2b241d6484c1c98080f69ac636e555cc60b7bf45cf45772ba9f537e83.css integrity="sha256-eLmC4rJB1khMHJgID2msY25VXMYLe/Rc9Fdyup9TfoM=">
+</head>
+<body><div id=content>
+<nav>
+<a href=/>HOME</a>
+</nav>
+<h1 id=on-agile-software-development>On Agile software development</h1>
+<h2 id=an-often-distorted-view>An often distorted view</h2>
+<p>In the past year, I’ve run many interviews for project-manager and engineering roles. One common thing I’ve noticed is that the industry’s idea of what Agile means, is incredibly varied, going from something that is waterfall under a different name, to a style that requires specific “Agile roles” in a team.</p>
+<p>In this post, I’ll go through what the initial idea of Agile was, and what it should be; hopefully, this will help people realise how far from the original purpose they’ve steered.</p>
+<h2 id=scrum-master>Scrum Master</h2>
+<p>Let’s start by talking about any team with a person dedicated to increasing everybody’s productivity. Every team that feels the need for it is, in my view, a team without professional people that you can trust, and a team with whom I probably would not enjoy working. The whole point of Agile is to operate in a group where collaboration, curiosity and ownership are the driving factors, and each member of the team should be happy taking turns to get involved and help other members.</p>
+<h2 id=stand-up-meeting>Stand-up meeting</h2>
+<p>Stand-up is where the team shares their updates and has the chance to ask for help. It is usually held in the morning, but it’s not essential.
+Each story requires a different amount of time, engagement and communication; there won’t always be an update from everyone.</p>
+<p>A warning sign is when each member is directly asked to provide an update, even when there is nothing new to discuss; this usually indicates a lack of trust, or professionalism, from one of the two parts. This ideally short meeting can quickly become distorted and micro-managed, transforming it from a useful tool to a tedious process.</p>
+<h2 id=grooming>Grooming</h2>
+<p>This meeting should be all about discussing what’s next and exploring ideas but without any commitment. The ticket should remain quite vague, with only a short explanation of what the goal is. Talking about problems and solutions allows the entire team to get a chance to say what they think and to increase domain knowledge sharing.</p>
+<p>It’s essential to keep the above in mind. A grooming meeting can get very ugly, becoming a planning meeting lacking in defined scope, where each ticket gets discussed and written down in minute details.</p>
+<h2 id=planning>Planning</h2>
+<p>Planning should be all about reviewing and expanding the tickets discussed during grooming. When talking about them, the team can add details and acceptance criteria. Acceptance criteria don’t have to be comprehensive yet but should describe what we expect from a working feature.</p>
+<p>A planning session should last two hours for a one week sprint, with an additional two for each consecutive week.</p>
+<p>To create good user stories, follow the INVEST rules:</p>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Rule</th>
+<th style=text-align:left>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left>Independent</td>
+<td style=text-align:left>User stories are independent of each other. They can be implemented in no particular order</td>
+</tr>
+<tr>
+<td style=text-align:left>Negotiable</td>
+<td style=text-align:left>Details should be left out of a card up until it will be kept up to do the work; This allows the card to be negotiable between developers and the business needs</td>
+</tr>
+<tr>
+<td style=text-align:left>Valuable</td>
+<td style=text-align:left>Must have clean and quantifiable value to the business</td>
+</tr>
+<tr>
+<td style=text-align:left>Estimable</td>
+<td style=text-align:left>Must be concrete enough to allow a developer to estimate it</td>
+</tr>
+<tr>
+<td style=text-align:left>Small</td>
+<td style=text-align:left>It should not be larger than the work that one or two developers can get done in a single iteration</td>
+</tr>
+<tr>
+<td style=text-align:left>Testable</td>
+<td style=text-align:left>It should have clear acceptance tests, provided by the business, and implemented by the QA. Once they pass, the story is considered done. Developers and QA should communicate, discuss and work together, if necessary</td>
+</tr>
+</tbody>
+</table>
+<h2 id=the-iteration>The iteration</h2>
+<p>Once the sprint starts, team members will begin picking up stories; this is where I often see the most confusion. Business, devs and QA should work together on each ticket from the start, discussing the story and adding happy and unhappy paths. I see many teams working in turns, with dev doing all their work and then passing the story to the QA, who then takes the story and implements their tests. This way of working is not collaborative, and by the time a dev says that the code is ready it’s usually too late to make any necessary changes quickly.
+Ideally, dev and QA must start working together on the ticket, with dev running all the tests as soon as they are available to establish a quick feedback loop.</p>
+<p>One piece of advice that I would give to each team is to start in the simplest way they can to manage stories and their progress. Many modern tools provide so much choice, but they add complexity to something designed for streamlining development.</p>
+<h2 id=software-development-methodology>Software development methodology</h2>
+<p>The point of any Agile team is to provide working software at the end of each sprint. I often see teams defining themselves Agile, but without following the necessary methodologies required.</p>
+<h3 id=simple-design>Simple Design</h3>
+<p>To be able to deliver value at the end of each sprint, code must be written in a way that minimises complexity and enables easily testable code.</p>
+<h3 id=pair-programming>Pair Programming</h3>
+<p>Pair Programming comes from the spirit of knowledge sharing and collaboration that Agile promotes. By pair programming, each member of the team will know more about the domain. It is easier to reach a satisfactory solution by working together.</p>
+<h3 id=test-driven-development>Test Driven Development</h3>
+<p>By the end of each sprint, all the stories should be ready to be released. How can you be sure if your code works as expected? The solution is to write your code, alongside a test that verifies your assumptions, so that each line of code is only added when necessary for the test to pass. This technique goes hand in hand with Simple Design.</p>
+<h2 id=definition-of-done>Definition of done</h2>
+<p>The point of each sprint is to deliver code ready to be released if the business decides that it is the right moment.</p>
+<blockquote>
+<p>How do you know when your code is ready to be released? When all the tests are passing.</p>
+</blockquote>
+<p>If a team is not confident enough in their code and tests, it should sound like a big warning, and the team must work out why and how to fix it as soon as possible.</p>
+<h2 id=retro>Retro</h2>
+<p>One of those meetings that people not confident in Agile tend to underestimate.</p>
+<p>Without a retro, a team won’t be able to improve quickly. By removing the obstacles that cause the most pain, they can be sure to check the effectiveness of their teamwork.</p>
+<footer>
+<time class=post-publication-date datetime=2020-02-10>10 Feb 2020</time>
+</footer>
+</div>
+</body>
+</html>
