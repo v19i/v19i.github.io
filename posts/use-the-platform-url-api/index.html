@@ -1,69 +1,26 @@
-<!doctype html><html lang=en-gb>
-<head><meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta charset=utf-8>
-<meta http-equiv=content-style-type content="text/css">
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=generator content="Hugo 0.89.1">
-<title>Use The Platform: URL API - Valerio Francescangeli</title>
-<link rel=stylesheet type=text/css href=/css/base.min.0f8a99670881dcfea571a35e1af122d4488a95fa1e896398008003ddf1addc3d.css integrity="sha256-D4qZZwiB3P6lcaNeGvEi1EiKlfoeiWOYAIAD3fGt3D0=">
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<link rel=manifest href=/site.webmanifest>
-<meta name=msapplication-TileColor content="#da532c">
-<meta name=theme-color content="#ffffff">
-<link rel=stylesheet type=text/css href=/css/article.min.78b982e2b241d6484c1c98080f69ac636e555cc60b7bf45cf45772ba9f537e83.css integrity="sha256-eLmC4rJB1khMHJgID2msY25VXMYLe/Rc9Fdyup9TfoM=">
-</head>
-<body><div id=content>
-<nav>
-<a href=/>HOME</a>
-</nav>
-<h1 id=use-the-platform-url-api>Use The Platform: URL API</h1>
-<p>Modern web JavaScript provides an intuitive and feature-rich interface to parse, create and edit URLs info.</p>
-<p>This page illustrates only the parts that I use the most; for the full spec, have a look at <a href=https://developer.mozilla.org/en-US/docs/Web/API/URL><code>URL</code></a> and <a href=https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams><code>URLSearchParams</code></a>.</p>
-<h2 id=create-a-url>Create a URL</h2>
-<p>A URL is created by instantiating a new URL instance:</p>
-<pre tabindex=0><code>const url = new URL(&quot;https://v19i.com&quot;);
-</code></pre><h2 id=manage-search-params>Manage search params</h2>
-<p>The created object provides an easy interface to add, edit and remove search params; it behaves similarly to <a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map><code>Map</code></a>.</p>
-<h4 id=set>Set</h4>
-<pre tabindex=0><code>url.searchParams.set(&quot;key&quot;, &quot;value&quot;);
-url.searchParams.set(&quot;valid&quot;, false);
-url.searchParams.set(&quot;email&quot;, &quot;test@example.com&quot;);
-url.searchParams.set(&quot;extra&quot;, 7);
-</code></pre><h4 id=delete>Delete</h4>
-<pre tabindex=0><code>url.searchParams.delete(&quot;extra&quot;);
-</code></pre><h4 id=update>Update</h4>
-<pre tabindex=0><code>url.searchParams.set(&quot;valid&quot;, true&quot;);
-</code></pre><h2 id=get-your-full-address-back>Get your full address back</h2>
-<p><code>href</code>, <code>toJSON</code> and <code>toString</code> will all, with minor differences, return a formatted address.</p>
-<pre tabindex=0><code>url.href; // https://v19i.com/?key=value&amp;valid=true&amp;email=test%40example.com
+<!doctype html><html lang=en-gb><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta charset=utf-8><meta http-equiv=content-style-type content="text/css"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.100.1"><title>Use The Platform: URL API - Valerio Francescangeli</title><link rel=stylesheet type=text/css href=/css/base.min.0f8a99670881dcfea571a35e1af122d4488a95fa1e896398008003ddf1addc3d.css integrity="sha256-D4qZZwiB3P6lcaNeGvEi1EiKlfoeiWOYAIAD3fGt3D0="><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link rel=stylesheet type=text/css href=/css/article.min.78b982e2b241d6484c1c98080f69ac636e555cc60b7bf45cf45772ba9f537e83.css integrity="sha256-eLmC4rJB1khMHJgID2msY25VXMYLe/Rc9Fdyup9TfoM="></head><body><div id=content><nav><a href=/>HOME</a></nav><h1 id=use-the-platform-url-api>Use The Platform: URL API</h1><p>Modern web JavaScript provides an intuitive and feature-rich interface to parse, create and edit URLs info.</p><p>This page illustrates only the parts that I use the most; for the full spec, have a look at <a href=https://developer.mozilla.org/en-US/docs/Web/API/URL><code>URL</code></a> and <a href=https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams><code>URLSearchParams</code></a>.</p><h2 id=create-a-url>Create a URL</h2><p>A URL is created by instantiating a new URL instance:</p><pre tabindex=0><code>const url = new URL(&#34;https://v19i.com&#34;);
+</code></pre><h2 id=manage-search-params>Manage search params</h2><p>The created object provides an easy interface to add, edit and remove search params; it behaves similarly to <a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map><code>Map</code></a>.</p><h4 id=set>Set</h4><pre tabindex=0><code>url.searchParams.set(&#34;key&#34;, &#34;value&#34;);
+url.searchParams.set(&#34;valid&#34;, false);
+url.searchParams.set(&#34;email&#34;, &#34;test@example.com&#34;);
+url.searchParams.set(&#34;extra&#34;, 7);
+</code></pre><h4 id=delete>Delete</h4><pre tabindex=0><code>url.searchParams.delete(&#34;extra&#34;);
+</code></pre><h4 id=update>Update</h4><pre tabindex=0><code>url.searchParams.set(&#34;valid&#34;, true&#34;);
+</code></pre><h2 id=get-your-full-address-back>Get your full address back</h2><p><code>href</code>, <code>toJSON</code> and <code>toString</code> will all, with minor differences, return a formatted address.</p><pre tabindex=0><code>url.href; // https://v19i.com/?key=value&amp;valid=true&amp;email=test%40example.com
 url.toJSON(); // Same as href
 url.toString(); // Same as href, but read-only
-</code></pre><h2 id=interaction-with-formdata>Interaction with FormData</h2>
-<p><code>URLSearchParams</code> accepts a <a href=https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData><code>FormData</code></a> instance as constructor argument.</p>
-<p>Let’s use this form as an example:</p>
-<pre tabindex=0><code>&lt;form&gt;
+</code></pre><h2 id=interaction-with-formdata>Interaction with FormData</h2><p><code>URLSearchParams</code> accepts a <a href=https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData><code>FormData</code></a> instance as constructor argument.</p><p>Let’s use this form as an example:</p><pre tabindex=0><code>&lt;form&gt;
   &lt;div&gt;
-    &lt;label for=&quot;username&quot;&gt;Username&lt;/label&gt;
-    &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot;&gt;
+    &lt;label for=&#34;username&#34;&gt;Username&lt;/label&gt;
+    &lt;input type=&#34;text&#34; id=&#34;username&#34; name=&#34;username&#34;&gt;
   &lt;/div&gt;
   &lt;div&gt;
-    &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
-    &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot;&gt;
+    &lt;label for=&#34;email&#34;&gt;Email&lt;/label&gt;
+    &lt;input type=&#34;email&#34; id=&#34;email&#34; name=&#34;email&#34;&gt;
   &lt;/div&gt;
-  &lt;input type=&quot;submit&quot; value=&quot;Update fields&quot;&gt;
+  &lt;input type=&#34;submit&#34; value=&#34;Update fields&#34;&gt;
 &lt;/form&gt;
-</code></pre><p><code>FormData</code> parses a form into a <code>Map</code> like interface that <code>URLSearchParams</code> can read and transform to allow easy URL manipulation.</p>
-<pre tabindex=0><code>const form = document.querySelector(&quot;form&quot;);
+</code></pre><p><code>FormData</code> parses a form into a <code>Map</code> like interface that <code>URLSearchParams</code> can read and transform to allow easy URL manipulation.</p><pre tabindex=0><code>const form = document.querySelector(&#34;form&#34;);
 const data = new FormData(form);
 const params = new URLSearchParams(data);
 params.toString(); // username=a+username&amp;email=an%40email.com 
-</code></pre>
-<footer>
-<time class=post-publication-date datetime=2021-05-07>7 May 2021</time>
-</footer>
-</div>
-</body>
-</html>
+</code></pre><footer><time class=post-publication-date datetime=2021-05-07>7 May 2021</time></footer></div></body></html>
