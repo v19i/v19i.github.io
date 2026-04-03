@@ -58,23 +58,23 @@
  grid-template-rows: repeat(2, 17rem);
  grid-template-columns: repeat(2, 17rem);;
  padding: var(--border-width);
- border: var(--border-width) solid var(--blue);
+ border: var(--border-width) solid var(--text);
  width: var(--square-size);
  margin: 0 auto;
  }
  @media (prefers-color-scheme: dark) {
  .outer {
- border-color: var(--yellow);
+ border-color: var(--text);
  }
  }
 
  .top-left, .top-right , .bottom-left, .bottom-right {
- border-color: var(--blue);
+ border-color: var(--text);
  border-style: solid;
  }
  @media (prefers-color-scheme: dark) {
  .top-left, .top-right , .bottom-left, .bottom-right {
- border-color: var(--yellow);
+ border-color: var(--text);
  }
  }
 
@@ -125,11 +125,11 @@
  }
 
  .black {
- background-color: var(--blue);
+ background-color: var(--text);
  }
  @media (prefers-color-scheme: dark) {
  .black {
- background-color: var(--yellow);
+ background-color: var(--text);
  }
  }
 
