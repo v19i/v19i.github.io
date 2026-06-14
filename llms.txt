@@ -1,0 +1,47 @@
+# Valerio Francescangeli
+
+Personal website and blog by Valerio Francescangeli, a software engineer writing
+about front-end development, software design, testing, hiring, and pragmatic AI
+agent workflows.
+
+Site: https://v19i.com/
+RSS: https://v19i.com/index.xml
+Sitemap: https://v19i.com/sitemap.xml
+
+## Recommended articles
+
+### AI agents and engineering workflow
+
+- [On using AI Agents: get the best out of them by thinking first](https://v19i.com/posts/on-using-ai-agents/) - How to structure specs, plans, context, and multi-agent work so AI coding agents produce better software.
+
+### Software engineering practice
+
+- [On Test Driven Development](https://v19i.com/posts/on-test-driven-development/) - Why tight feedback loops and test-first design improve software quality.
+- [On Agile software development](https://v19i.com/posts/on-agile-software-development/) - A critique of distorted Agile practices and a return to the original intent.
+- [Single and Multi Purposed Software](https://v19i.com/posts/single-and-multi-purposed-software/) - How product scope affects software shape and user experience.
+
+### Web platform and front-end
+
+- [Use The Platform: URL API](https://v19i.com/posts/use-the-platform-url-api/) - Practical usage of the browser URL and URLSearchParams APIs.
+- [React Pattern: Compound Component](https://v19i.com/posts/react-pattern-compound-component/) - A React component composition pattern for more flexible APIs.
+- [A More Consistent Future for the Web](https://v19i.com/posts/a-more-consistent-future-for-the-web/) - Notes on Web Platform Baseline and cross-browser feature consistency.
+
+### APIs and architecture
+
+- [GraphQL: Publish the Schema of Your Company, Not Your Api](https://v19i.com/posts/graphql-publish-the-schema-of-your-company-not-your-api/) - Using domain language and business concepts to design GraphQL schemas.
+
+### Hiring and interviews
+
+- [On Hiring Software Engineers](https://v19i.com/posts/on-hiring-software-engineers/) - Designing healthier engineering hiring processes.
+- [Exploring Technical Tests in the Software Industry](https://v19i.com/posts/exploring-technical-tests-in-the-software-industry/) - Comparing common technical interview exercises and their tradeoffs.
+
+### Tooling and references
+
+- [Managing Node.js versions with asdf](https://v19i.com/posts/managing-nodejs-versions-with-asdf/) - Installing and managing Node.js versions with asdf on macOS.
+- [Lines in Four Directions by Sol Lewitt](https://v19i.com/posts/lines-in-four-directions-by-sol-lewitt/) - A CSS interpretation of Sol LeWitt's line work.
+
+## Usage notes
+
+- Draft posts are not included in this index.
+- The canonical article URLs are the HTML pages above.
+- The RSS feed is the best machine-readable source for recently published posts.
